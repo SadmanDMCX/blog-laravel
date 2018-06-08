@@ -1,0 +1,42 @@
+//// Commands
+
+php artisan serve
+
+php artisan make:auth
+
+php artisan route:list
+
+php artisan migrate
+
+php artisan tinker
+
+php artisan make:model "NAME(Singular)" -m
+
+php artisan make:controller "NAME(Plural)" --resource
+
+php artisan migrate:refresh
+
+php artisan make:seeder "NAME"+Seeder
+
+php artisan db:seed
+
+// pivot table -> (Name[s]) (Name[s]) === (Name) (Name) === Order By Alphabetically ==> create_(name)_(name)_table
+php artisan make:migration create_name_name_table
+
+// make middleware
+php artisan make:middleware "(NAME)"
+
+// insert new column
+php artisan make:migration insert_(NAME)_column --table="(TABLE_NAME)"
+
+//// Dependencies
+Toastr (Toast in web pages)
+Disqus (Commenting platform)
+AddThis (Content Sharing)
+MailChimp (Email Collector)
+
+//// Packages
+// Manage Newslatters
+composer require spatie/laravel-newsletter
+php artisan vendor:publish --provider="Spatie\Newsletter\NewsletterServiceProvider"
+
